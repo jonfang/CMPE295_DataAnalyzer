@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello, Django</title>
+    </head>
+    <body>
+            <img src="data:image/png;base64,{{image_base64}}" alt="some text to display to your users when the image does not show correctly" width=500 height=auto />
+        <strong>Hello there, {{ name }}!</strong> It's {{ date | date:'l, d F, Y' }} at {{ date | time:'H:i:s' }}
+    </body>
+</html>
