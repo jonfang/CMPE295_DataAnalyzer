@@ -6,8 +6,7 @@ from datetime import datetime
 from core.chartfactory import createBarChart, createPieChart
 from core.dataprocessor import DataProcessor
 
-
-def home(request):
+def sample(request):
     """
     sample python report
     """
@@ -16,13 +15,20 @@ def home(request):
     image_base64 = createBarChart(keys, values, 'Usage', 'Programming language usages')
     return render(
         request,
-        'analyzer/layout.html',
-        # {
-        #     'name': "Jon",
-        #     'date': datetime.now(),
-        #     'image_base64':image_base64,
-        # }
+        'analyzer/main.html',
+        {
+            'name': "Jon",
+            'date': datetime.now(),
+            'image_base64':image_base64,
+        }
     )
+
+def home(request):
+    return render(
+        request,
+        'analyzer/layout.html',
+    )
+    
 #google play app report 1
 def report1(request):
     keys = []

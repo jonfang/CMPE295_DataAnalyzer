@@ -8,7 +8,8 @@ To run the sample:
 1. Install packages with `pip install -r requirements.txt`.
 1. Activate the virtual environment by running `source env/bin/activate` (Linux/MacOS) or `env\scripts\activate` (Windows).
 1. Create and initialize the database by running `python manage.py migrate`.
-1. Create a superuser as described at the end of the tutorial.
+1. Start server by running `python manage.py runserver`.
+1. Go visit homepage at http://127.0.0.1:8000/analyzer
 
 Contributions to the sample are welcome. When submitting changes, also consider submitting matching changes to the tutorial, the source file for which is [tutorial-django.md]
 (https://github.com/Microsoft/vscode-docs/blob/master/docs/python/tutorial-django.md).
