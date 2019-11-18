@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FakeNewsDetector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/style2.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/icomoon.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/flaticon.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/ionicons.min.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/magnific-popup.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/owl.theme.default.min.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/owl.carousel.min.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/animate.css' %}" />
+    <link type="text/css"
+          rel="stylesheet"
+          href="{% static 'analyzer/css/open-iconic-bootstrap.min.css' %}" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/"><span>FakeNewsDetector</span></a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <!-- <li class="nav-item"><a href="/" class="nav-link" data-nav-section="home"><span>Home</span></a></li> -->
+                <li class="nav-item"><a href="#" class="nav-link" data-nav-section="datasets"><span>Datasets</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
+                <li class="nav-item cta"><a href="#" class="nav-link" data-nav-section="upload">Upload Dataset</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-wrap js-fullheight" style="background-image: url('{% static 'analyzer/images/news2.jpg'%}');" data-section="home">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+            <div class="col-md-8 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
+                <p class="d-flex align-items-center" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                    <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center mr-3">
+                        <span class="ion-ios-play play mr-2"></span>
+                        <span class="watch">Watch Video</span>
+                    </a>
+                </p>
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Data-driven Analysis of Correlations Between Real World Data and Media Content</h1>
+                <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Upload your official source data to see the analysis result.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-services ftco-no-pt" data-section="datasets">
+    <div class="container">
+        <div class="row services-section">
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services text-center d-block">
+                    <div class="icon"><span class="flaticon-idea"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">Google App Store</h3>
+                        <p>The result shows clearly that social applications are very popular among the top downloaded apps, which validates that the internet sources are credible.</p>
+                        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services text-center d-block">
+                    <div class="icon"><span class="flaticon-compass-symbol"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">India International Trade</h3>
+                        <p>We validate that the news source is credible as the top traders with India correlates with our analysis.</p>
+                        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services text-center d-block">
+                    <div class="icon"><span class="flaticon-layers"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">Oakland Crime rate</h3>
+                        <p>We conclude that while Oakland is relatively unsafe, its status as one of the most dangerous city is not completely true based on statistics and our analyzed result.
+                        </p>
+        <p><a href="#" class="btn btn-primary">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="section-counter" data-section="upload">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-12 col-lg-12 d-flex">
+                <div class="img d-flex align-self-stretch align-items-center" style="background-image:url({% static 'analyzer/images/data4.jpg' %});">
+                    <div class="request-quote py-5">
+                        <div class="py-2">
+                            <span class="subheading">Please upload your dataset used for verification.</span>
+                            <h3>Official Source Data</h3>
+                        </div>
+                        <form:form method="POST"
+                                   action="predict" class="request-form ftco-animate">
+                            <!-- work balance, culture values, career opportunities, company benefit, senior managemen
+                            <div class="form-group">
+                                Work Balance: <input type="text" class="form-control" placeholder="(1 to 5)" name="life">
+                            </div>
+                            <div class="form-group">
+                                Culture Values: <input type="text" class="form-control" placeholder="(1 to 5)" name="culture">
+                            </div>
+                            <div class="form-group">
+                                Career Opportunities: <input type="text" class="form-control" placeholder="(1 to 5)" name="opportunity">
+                            </div>
+                            <div class="form-group">
+                                Company Benefit: <input type="text" class="form-control" placeholder="(1 to 5)" name="benefit">
+                            </div>
+                            <div class="form-group">
+                                Senior Management: <input type="text" class="form-control" placeholder="(1 to 5)" name="management">
+                            </div> -->
+                            <div class="form-group">
+                                <input type="submit" value="Upload" class="btn btn-secondary py-3 px-4">
+                            </div>
+                        </form:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-project bg-light" data-section="team">
+    <div class="container-fluid px-md-5">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+
+                <h2 class="mb-4">Project Team</h2>
+                <p>A project presented to San Jose State University in partial fulfillment of the requirements for the degree
+                   Master of Science in Software Engineering</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 testimonial">
+                <div class="carousel-project owl-carousel">
+                    <div class="item">
+                        <div class="project">
+                            <div class="img">
+                                <img src="{% static 'analyzer/images/cyf.jpg' %}" class="img-fluid" alt="Colorlib Template">
+                                <a href="{% static 'analyzer/images/cyf.jpg' %}" class="icon image-popup d-flex justify-content-center align-items-center">
+                                    <span class="icon-expand"></span>
+                                </a>
+                            </div>
+                            <div class="text px-4">
+                                <h3><a href="#">ChingYeung Fang</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project">
+                            <div class="img">
+                                <img src="{% static 'analyzer/images/qijiacao.jpg' %}" class="img-fluid" alt="Colorlib Template">
+                                <a href="{% static 'analyzer/images/qijiacao.jpg' %}" class="icon image-popup d-flex justify-content-center align-items-center">
+                                    <span class="icon-expand"></span>
+                                </a>
+                            </div>
+                            <div class="text px-4">
+                                <h3><a href="#">Qijia Cao</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project">
+                            <div class="img">
+                                <img src="{% static 'analyzer/images/hanbingleng.jpeg' %}" class="img-fluid" alt="Colorlib Template">
+                                <a href="{% static 'analyzer/images/hanbingleng.jpeg' %}" class="icon image-popup d-flex justify-content-center align-items-center">
+                                    <span class="icon-expand"></span>
+                                </a>
+                            </div>
+                            <div class="text px-4">
+                                <h3><a href="https://www.linkedin.com/in/hanbing-leng/">Hanbing Leng</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project">
+                            <div class="img">
+                                <img src="{% static 'analyzer/images/luyu.jpg' %}" class="img-fluid" alt="Colorlib Template">
+                                <a href="{% static 'analyzer/images/luyu.jpg' %}" class="icon image-popup d-flex justify-content-center align-items-center">
+                                    <span class="icon-expand"></span>
+                                </a>
+                            </div>
+                            <div class="text px-4">
+                                <h3><a href="https://www.linkedin.com/in/lu-yu/">Lu Yu</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script></p>
+                <p>ChingYeung Fang,  Hanbing Leng,  Lu Yu,  Qijia Cao</p> 
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="{% static 'analyzer/js/jquery.min.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'analyzer/js/popper.min.js' %}"></script>
+<script src="{% static 'analyzer/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'analyzer/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'analyzer/js/aos.js' %}"></script>
+<script src="{% static 'analyzer/js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'analyzer/js/scrollax.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="{% static 'analyzer/js/google-map.js' %}"></script>
+<script src="{% static 'analyzer/js/main.js' %}"></script>
+
+</body>
+</html>
