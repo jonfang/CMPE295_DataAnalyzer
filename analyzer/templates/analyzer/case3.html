@@ -1,0 +1,60 @@
+{% extends "analyzer/layout.html" %}
+{% block content %}
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/analyzer"><span>FakeNewsDetector</span></a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+    </div>
+</nav>
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'analyzer/images/crime1.jpg' %});" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <h1 class="mb-3 bread">Oakland Crime Rate Analysis</h1>
+                <p class="breadcrumbs"><span class="mr-2">Is Oakland one of the most dangerous places in America?</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-last ftco-animate">
+                <p>
+                    Multiple  news sources that indicate Oakland city is among one of the most dangerous places in America. We draw data sources from government for the Oakland city crime rate from 2011 and 2016, over 1,000,000 of incidents to gain some insights about why Oakland city is dangerous. 
+                    Surprisingly, while Oakland has many types of actual crimes such as stolen vehicles, battery, etc. The top alert and crime incidents are actually quite harmless (alarm ring, security check, and 911 hang up) and constitute about 50 percent of the crime report. We can conclude that while Oakland is relatively unsafe, its status as one of the most dangerous city is not completely true based on statistics and our analyzed result.
+                    </p>
+                <p>
+                    <img src="data:image/png;base64,{{report4a}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report4b}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="{% static 'analyzer/images/cbs.png' %}" alt="googleAppStore1.png" class="img-fluid">
+                </p>
+                <p><b>Online data source: </b> https://www.cbsnews.com/
+                </p>
+            </div>
+            <div class="col-lg-4 sidebar ftco-animate">
+                <div class="sidebar-box ftco-animate">
+                    <h3 class="heading-sidebar">Analysis Benchmark</h3>
+                    <ul class="categories">
+                        <li>Source data format: CSV</li>
+                        <li>1,046,388 rows of data</li>
+                        <li>Rendered in 10 seconds</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
