@@ -29,6 +29,23 @@ def home(request):
         'analyzer/home.html',
     )
 
+def submit(request):
+    data = {}
+    if request.method == 'POST':
+        data = {
+            "title": request.POST.get("title", "defaultTitle"),
+            "description": request.POST.get("description", "defaultDescription"),
+            "news": request.POST.get("news", "defaultNews"),
+            "dataSet": request.POST.get("dataSet", "defaultDataset"),
+            "bar": request.POST.get("bar", "defaultBar"),
+            "pie": request.POST.get("pie", "defaultPie")
+        }
+    return render(
+        request,
+        'analyzer/new.html',
+        data
+    )
+
 def case1(request):
     keys = []
     values = []

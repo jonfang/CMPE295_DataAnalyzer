@@ -3,6 +3,7 @@ from analyzer import views
 
 urlpatterns = [
     path("", views.home, name="home"),
+    path("submit", views.submit, name="submit"),
     path("case1", views.case1, name="case1"),
     path("case2", views.case2, name="case2"),
     path("case3", views.case3, name="case3"),
