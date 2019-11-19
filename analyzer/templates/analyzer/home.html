@@ -13,7 +13,7 @@
                 <!-- <li class="nav-item"><a href="/" class="nav-link" data-nav-section="home"><span>Home</span></a></li> -->
                 <li class="nav-item"><a href="/analyzer" class="nav-link" data-nav-section="datasets"><span>Case Studies</span></a></li>
                 <li class="nav-item"><a href="/analyzer" class="nav-link" data-nav-section="team"><span>Project Team</span></a></li>
-                <li class="nav-item cta"><a href="/analyzer" class="nav-link" data-nav-section="upload">Upload Dataset</a></li>
+                <li class="nav-item cta"><a href="/analyzer" class="nav-link" data-nav-section="upload">Generate Analysis</a></li>
             </ul>
         </div>
     </div>
@@ -82,31 +82,33 @@
                 <div class="img d-flex align-self-stretch align-items-center" style="background-image:url({% static 'analyzer/images/data4.jpg' %});">
                     <div class="request-quote py-5">
                         <div class="py-2">
-                            <span class="subheading">Please upload your dataset used for verification.</span>
-                            <h3>Official Source Data</h3>
+                            <span class="subheading">Please upload your official dataset and dubious news used for verification.</span>
+                            <h3>Generate Analysis</h3>
                         </div>
-                        <form:form method="POST"
-                                   action="predict" class="request-form ftco-animate">
-                            <!-- work balance, culture values, career opportunities, company benefit, senior managemen
+                        <form method="POST"
+                                   action="submit" class="request-form ftco-animate">
+                            {% csrf_token %}
                             <div class="form-group">
-                                Work Balance: <input type="text" class="form-control" placeholder="(1 to 5)" name="life">
+                                Analysis Title: <input type="text" class="form-control" name="title">
                             </div>
                             <div class="form-group">
-                                Culture Values: <input type="text" class="form-control" placeholder="(1 to 5)" name="culture">
+                                Description: <input type="text" class="form-control" name="description">
                             </div>
                             <div class="form-group">
-                                Career Opportunities: <input type="text" class="form-control" placeholder="(1 to 5)" name="opportunity">
+                                News Link: <input type="text" class="form-control" name="news">
                             </div>
                             <div class="form-group">
-                                Company Benefit: <input type="text" class="form-control" placeholder="(1 to 5)" name="benefit">
+                                Official Dataset: <input type="file" class="form-control" placeholder="CSV or JSON" name="dataset">
                             </div>
                             <div class="form-group">
-                                Senior Management: <input type="text" class="form-control" placeholder="(1 to 5)" name="management">
-                            </div> -->
-                            <div class="form-group">
-                                <input type="submit" value="Upload" class="btn btn-secondary py-3 px-4">
+                                Analysis Type: 
+                                <input type="checkbox" class="form-control" name="bar" value="bar">Bar Chart
+                                <input type="checkbox" class="form-control" name="pie" value="pie">Pie Chart
                             </div>
-                        </form:form>
+                            <div class="form-group">
+                                <input type="submit" value="Submit" class="btn btn-secondary py-3 px-4">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
