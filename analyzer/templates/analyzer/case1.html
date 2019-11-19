@@ -1,0 +1,66 @@
+{% extends "analyzer/layout.html" %}
+{% block content %}
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/analyzer"><span>FakeNewsDetector</span></a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+    </div>
+</nav>
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'analyzer/images/app2.jpg' %});" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <h1 class="mb-3 bread">Google App Store Analysis</h1>
+                <p class="breadcrumbs"><span class="mr-2">Most popular app in Google App Store</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-last ftco-animate">
+                <p>
+                    We’ve ran analysis over 10k of apps on Google Play store and have the below results. From the graph, we can see that social and family category applications are most popular among android users.
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report1}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report2}}" alt="" class="img-fluid">
+                </p>
+                <p>Below are the results we gathered from onlines.</p>
+                <p>
+                    <img src="{% static 'analyzer/images/googleAppStore2.png' %}" alt="googleAppStore1.png" class="img-fluid">
+                </p>
+                <p>
+                    <img src="{% static 'analyzer/images/googleAppStore3.png' %}" alt="googleAppStore2.png" class="img-fluid">
+                </p>
+                <p><b>Online data source: </b> https://en.wikipedia.org,
+                    https://www.makeuseof.com,
+                    https://sensortower.com
+                </p>
+                <p>From the result, we can clearly see that social applications are very popular among the top downloaded apps, which validates that the internet sources are credible. </p>
+            </div>
+            <div class="col-lg-4 sidebar ftco-animate">
+                <div class="sidebar-box ftco-animate">
+                    <h3 class="heading-sidebar">Analysis Benchmark</h3>
+                    <ul class="categories">
+                        <li>Source data format: CSV</li>
+                        <li>10,000 rows of data</li>
+                        <li>Rendered in 33 seconds</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

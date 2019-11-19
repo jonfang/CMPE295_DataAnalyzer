@@ -1,0 +1,67 @@
+{% extends "analyzer/layout.html" %}
+{% block content %}
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/analyzer"><span>FakeNewsDetector</span></a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+    </div>
+</nav>
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'analyzer/images/trade1.jpg' %});" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <h1 class="mb-3 bread">India International Trade Analysis</h1>
+                <p class="breadcrumbs"><span class="mr-2">Top trading partners with India over the past decade. 
+                    </span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-last ftco-animate">
+                <p>
+                    We draw roughly 180,000 rows of data concerning india international trade from 2010 to 2018 and see that China, Arab, and U.S.A. are among the top trading partner with India over the past decade. 
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report5a}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report5b}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report6a}}" alt="" class="img-fluid">
+                </p>
+                <p>
+                    <img src="data:image/png;base64,{{report6b}}" alt="" class="img-fluid">
+                </p>
+                <p>We research news regarding india trading partners and find the below result.</p>
+                <p>
+                    <img src="{% static 'analyzer/images/indiaTrade.png' %}" alt="googleAppStore1.png" class="img-fluid">
+                </p>
+                <p><b>Online data source: </b> http://www.worldstopexports.com</p>
+                <p>From the new report, we can validate that the news source is credible as the top traders with India correlates with our analysis. </p>
+            </div>
+            <div class="col-lg-4 sidebar ftco-animate">
+                <div class="sidebar-box ftco-animate">
+                    <h3 class="heading-sidebar">Analysis Benchmark</h3>
+                    <ul class="categories">
+                        <li>Source data format: CSV, JSON</li>
+                        <li>180,000 rows of data</li>
+                        <li>Rendered in 5 seconds</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
