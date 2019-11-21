@@ -2,10 +2,12 @@
 ### Team Member: ChingYeung Fang, Hanbing Leng, Lu Yu, Qijia Cao
 
 
-![homepage](https://drive.google.com/uc?export=view&id=1gfez-sh2Lqhotz-KZRRVKQL5hLtXkyPz)
-![case1](https://drive.google.com/uc?export=view&id=13Vfw0aQKOKq4CdJXGHIHsGmxFwnrgLQC)
-![case2](https://drive.google.com/uc?export=view&id=1gt4hyw6Z6sI5AiudFUrAhdhccoH7oB4j)
-![case3](https://drive.google.com/uc?export=view&id=1jaNRzQ9MvU9KVjuflWJrg_CxnL4-Zwf_)
+![homepage](https://drive.google.com/uc?export=view&id=1AMiB4-D8sukmMT5FROqpq7PthmU5y1wd)
+![case1](https://drive.google.com/uc?export=view&id=1wk-laNomG37keakd4nb-nIq2_OsXONzt)
+![case2](https://drive.google.com/uc?export=view&id=1bVNDHu7FOp2Zl5SsKFWG3ga1jA7Orbzn)
+![case3](https://drive.google.com/uc?export=view&id=118UBPjdBo609pJsY3LPPF6dCI68fNPyx)
+![submit_data](https://drive.google.com/uc?export=view&id=10sFDZg58NbkTeqbXTxeAatL1-jMBLjnU)
+![generate_analysis](https://drive.google.com/uc?export=view&id=1_bPDEXcujZ6NEnA8H18IMdC4K2cSH_bY)
 
 To run the app locally:
 
