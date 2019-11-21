@@ -1,5 +1,7 @@
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.functions import sum as _sum
+from pyspark.sql.functions import avg
+from pyspark.sql.types import DecimalType
 from functools import reduce
 import logging
 
@@ -66,3 +68,12 @@ class DataProcessor:
             for r in rows:
                     keys.append(r[0])
                     values.append(r[1])
+        elif(report_type==7):
+            df = self.spark.read.csv(path="DataSources/employee_reviews/employee_reviews.csv", header="true")
+            df = df.groupBy("company").agg(avg('overall-ratings').alias("rating"))
+            df = df.select(df.company, df.rating.cast(DecimalType(precision=10, scale=3)).alias('average rating'))
+            rows = df.limit(10).collect()
+            for r in rows:
+                    keys.append(r[0])
+                    values.append(r[1])
+            df.show()

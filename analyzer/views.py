@@ -32,13 +32,18 @@ def home(request):
 def submit(request):
     data = {}
     if request.method == 'POST':
+        # keys = []
+        # values = []
+        # DataProcessor.getInstance().loadAndProcess(keys, values, report_type=7)
+        # image_base64 = createBarChart(keys, values, 'Company', 'Average Empoyee Rating')
         data = {
             "title": request.POST.get("title", "defaultTitle"),
             "description": request.POST.get("description", "defaultDescription"),
             "news": request.POST.get("news", "defaultNews"),
             "dataSet": request.POST.get("dataSet", "defaultDataset"),
             "bar": request.POST.get("bar", "defaultBar"),
-            "pie": request.POST.get("pie", "defaultPie")
+            "pie": request.POST.get("pie", "defaultPie"),
+            # "report1":image_base64
         }
     return render(
         request,
